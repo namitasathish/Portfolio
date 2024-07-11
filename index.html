@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Namita Sathish's Portfolio</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Namita Sathish</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item" style="color: #e2afff;"><a href="#home-section" class="nav-link" style="color: #e2afff;"><span style="color: #e2afff;">Home</span></a></li>
+	          <li class="nav-item" style="color: #e2afff;"><a href="#about-section" class="nav-link" style="color: #e2afff;"><span style="color: #e2afff;">About</span></a></li>
+	          <li class="nav-item" style="color: #e2afff;"><a href="#education-section" class="nav-link" style="color: #e2afff;"><span style="color: #e2afff;">Education</span></a></li>
+	          <li class="nav-item" style="color: #e2afff;"><a href="#project-section" class="nav-link" style="color: #e2afff;"><span style="color: #e2afff;">Projects</span></a></li>
+	          <li class="nav-item" style="color: #e2afff;"><a href="#contact-section" class="nav-link" style="color: #e2afff;"><span style="color: #e2afff;">Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/nami1.jpg); width:500px; height:200px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading" style="color: #e2afff;">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span style="color: #e2afff;">Namita Sathish</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Student  ',
+						'Programme Representative ',
+						'Web Developer  ',
+						'Machine Learning Ethusiast  ',
+						'Computer Vision Rookie'
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 100); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 120);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p>
+							<a href="https://github.com/namitasathish" class="btn btn-white btn-outline-white py-3 px-4" style="text-decoration: none; color: inherit; transition: background-color 0.3s, border-color 0.3s;">
+								<span onmouseover="this.style.color='#ffbd39'; this.style.borderColor='#ffbd39'" onmouseout="this.style.color='white'; this.style.borderColor='white'">
+									My Works
+								</span>
+							</a>
+						</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									
+								  </div>
+
+								<div class="skill-mf" style="margin-left: 100px;">
+									<br/>
+									<p class="title-s" style="color: #e2afff; font-weight: bolder; font-size: 30px; ">Skills</p>
+									<span style="font-size: 20px;">Web Development</span> 
+									<br/>
+									
+									<span style="font-size: 20px;">Machine Learning</span>
+									<br/>
+									
+									<span style="font-size: 20px;">Compter Vision</span> 
+									
+									
+								</div>
+								<div class="skill-mf" style="margin-left: 100px;">
+									<br/>
+									<p class="title-s" style="color: #e2afff; font-weight: bolder; font-size: 30px; ">Languages</p>
+									<span style="font-size: 20px;">HTML, </span> 
+									
+									
+									<span style="font-size: 20px;">CSS,</span>
+									
+									
+									<span style="font-size: 20px;">JS</span>
+									
+									<br/>
+									<span style="font-size: 20px;">PHP</span> 
+									<br/>
+							
+									<span style="font-size: 20px;">C</span> 
+									<br/>
+									<span style="font-size: 20px;">Python</span> 
+									<br/>
+									<span style="font-size: 20px;">Java</span> 
+									<br/>
+									<span style="font-size: 20px;">SQL</span> 
+									<br/>
+									<span style="font-size: 20px;">R Language</span> 
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5" >
+						<div class="row justify-content-start pb-3" style="margin-right: 20px;">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>
+									I'm a second-year Integrated M.Tech student in Computer Science Engineering at VIT Chennai.
+									 With a strong base in Web Development, I'm currently delving into Machine Learning and Computer Vision, 
+									 actively pursuing projects in these areas. 
+									 Alongside a robust academic background, I possess strong leadership and team management skills, 
+									 driven by a passion for exploring new fields and solving real-world challenges.
+									</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									
+								
+									
+									<li class="d-flex"><span>I speak:</span> <span>English, Telugu, Tamil, Hindi</span></li>
+						
+									<li class="d-flex"><span>Extracurricular Skills:</span> <span>District level Badminton player, Certified Bharatnatyam dancer, Rajyapuraskar Awardee(Scouts and guides)  </span></li>
+					
+									
+								</ul>
+							</div>
+						</div>
+                        <br/>
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								
+								<p><a href="https://www.linkedin.com/in/namitasathish/" class="btn btn-primary py-3 px-3"style="background-color: #e2afff;">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    
+		<div class="row" id="education-section">
+			<h1 class="big-4">Education</h1>
+			
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date" style="color:#e2afff;">2023-Present</span>
+    					<h2>Vellore Institute of Technology
+							-Chennai</h2>
+    					<span class="position">Integrated.Mtech Computer Science Engineering spl.Business Analytics </span>
+    					<br/>
+						
+						<p class="mt-4">CGPA: <b>9.34  </b>  (as on May 2024)</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date" style="color:#e2afff;">2009-2023</span>
+    					<h2>Hussain Memorial matriculation.hr.sec School</h2>
+    					<p class="position">Schooling</p>
+    					<p class="mt-4">Grades:  12th- 94% 11th- 95%
+						</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="images/Namita Sathish.pdf" class="btn btn-primary py-4 px-5" style="background-color: #e2afff;">Open CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>below are some projects I made </p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/namitasathish/Weather-Dashboard" class="block-20 zoom-effect" style="background-image: url('images/weather.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/namitasathish/Weather-Dashboard"> <span onmouseover="this.style.color='#e2afff'" onmouseout="this.style.color='white'">
+					Weather Dashboard 
+				</span></a></h3>
+                <p>Gives the current weather forecast for the entered location and also displays a 5-day weather forecast. Can also detect the users current location. Uses OpenWeather API</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/namitasathish/IndiVision" class="block-20 zoom-effect" style="background-image: url('images/indivision.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/namitasathish/IndiVision"><span onmouseover="this.style.color='#e2afff'" onmouseout="this.style.color='white'">
+					IndiVision
+				</span></a></h3>
+                <p>This ML model aims to capture the diversity of Indian food, can identify images of over 200+ Indian dishes, employs transfer learning with MobileNet V2 for feature extraction and classification.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/namitasathish/Virtual-Canvas" class="block-20 zoom-effect" style="background-image: url('images/paint.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/namitasathish/Virtual-Canvas"><span onmouseover="this.style.color='#e2afff'" onmouseout="this.style.color='white'">
+					Virtual Canvas- using Python
+				</span></a></h3>
+                <p>This utilizes Python with OpenCV and MediaPipe to create an interactive drawing environment. Users can draw using hands gestures and they are captured by the camera, with real-time feedback</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/namitasathish/Chat-WebApp" class="block-20 zoom-effect" style="background-image: url('images/chatapp1.png')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/namitasathish/Chat-WebApp"><span onmouseover="this.style.color='#e2afff'" onmouseout="this.style.color='white'">
+					Chat-WebApp
+				</span></a></h3>
+				  <p>A chat application built using ReactJS, ChatEngine, and Axios, with User Authentication, Image sharing and Groupchat functionality</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-center">
+				<a href="https://namitasathish.github.io/Beat-Box-Blitz/" class="block-20 zoom-effect" style="background-image: url('images/bbb.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://namitasathish.github.io/Beat-Box-Blitz/"><span onmouseover="this.style.color='#e2afff'" onmouseout="this.style.color='white'">
+					BeatBoxBlitz -game
+				</span></a></h3>
+				  <p>An rhythm-based game developed on Scratch with mechanics inspired by Geometry Dash. The game was later converted into HTML to make it accessible via web browsers</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://namitasathish.github.io/Flappy-Bird/" class="block-20 zoom-effect" style="background-image: url('images/bird2.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://namitasathish.github.io/Flappy-Bird/"><span onmouseover="this.style.color='#e2afff'" onmouseout="this.style.color='white'">
+					Flappy Bird
+				</span></a></h3>
+				  <p>This is a web based recreation of the classic game- Flappy Bird, Players can play by clicking on space or up arrow to navigate the bird through the pipes</p>
+				</div>
+			  </div>
+			</div>
+
+			
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+     
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/gitbg.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span style="color: #e2afff;"> Github  </span> </h2>
+						<div class="heading"> <h4> Inclined towards solving problems &amp; learning the unknown </h4>
+						<br>
+						<p><a href="https://github.com/namitasathish" class="btn btn-primary py-3 px-5" style="background-color: #e2afff;">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs" style="color: #e2afff;"onmouseover="this.style.color='#ffbd39'" onmouseout="this.style.color='#e2afff'"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Chennai, Tamilnadu, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2 " style="color: #e2afff;" onmouseover="this.style.color='#ffbd39'" onmouseout="this.style.color='#e2afff'"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+91 7358101303">+91 7358101303</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane" style="color: #e2afff;"onmouseover="this.style.color='#ffbd39'" onmouseout="this.style.color='#e2afff'"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:namitasathish1@gmail.com">namitasathish1@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe" style="color: #e2afff;" onmouseover="this.style.color='#ffbd39'" onmouseout="this.style.color='#e2afff'"></span>
+          		</div>
+          		<h3 class="mb-4">Open CV</h3>
+	            <p><a href="images/Namita Sathish.pdf"><u>CV link</u></a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+				<br>
+					
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.easing.1.3.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+ <script src="js/aos.js"></script>
+   <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
