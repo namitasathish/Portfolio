@@ -548,7 +548,15 @@
   
   <script src="js/main.js"></script>
 
-	   <script src="https://vercel-analytics.com/script.js" defer></script>
+	     <script>
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.vercel-insights.com/v1/script.js';
+      script.setAttribute('data-token', 'ZA8iGRzEb4XJd6xacZJT5nQT'); 
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  </script>
     
   </body>
 </html>
