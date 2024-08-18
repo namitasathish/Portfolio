@@ -52,7 +52,7 @@
 /* Animation styles */
 #typing-animation {
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   overflow: hidden;
@@ -151,7 +151,7 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Student  ',
+						'Student Council Member',
 						'Programme Representative ',
 						'Web Developer  ',
 						'Machine Learning Ethusiast  ',
@@ -164,14 +164,14 @@
 						for (let i = 0; i < text.length; i++) {
 							setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 100); // Increase the delay to slow down the typing animation
+							}, i * 110); // Increase the delay to slow down the typing animation
 						}
 
 						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 120);
+						}, text.length * 125);
 						}
 
 						// Start the typing animation loop
